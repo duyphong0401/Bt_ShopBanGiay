@@ -1,0 +1,48 @@
+
+.card .card_ShoesImg {
+    box-shadow:
+        6px 6px 12px #e2ebfc,
+        -6px -6px 12px #fff;
+    border-radius: 8px;
+}
+
+.card,
+.card_Shoes .img {
+    width: 100%;
+}
+.card,
+.card-body,
+.shoes__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-blue-1;
+}
+.card,
+.card-body,
+.shoes__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-blue-1;
+}
+.card .shoes__rating {
+    color: $color-yellow-1;
+}
+.card .card_Shoes {
+    box-shadow:
+        6px 6px 12px #e2ebfc,
+        -6px -6px 12px #fff;
+    background-color: #f5f9fe;
+    border: none;
+    padding: 30px;
+}
+.card {
+    .card-body {
+        .shoes__title {
+            text-decoration: none;
+            color: $color-blue-2;
+        }
+        .shoes__title:hover {
+            text-decoration: underline;
+        }
+    }
+}
