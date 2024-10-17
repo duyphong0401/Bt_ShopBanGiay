@@ -17,7 +17,7 @@ function hienThiCard(arrShoes) {
                             <div class="d-flex justify-content-between">
                                 <div>
                                 <a class="shoes__title" href="./views/detail.html?id=${shoes.id}">
-                                    <h3>${shoes.name}</h3></a>
+                                    <h5 class="text-start">${shoes.name}</h3></a>
                                    
                                 </div>
                                 <div>
