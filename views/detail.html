@@ -118,8 +118,38 @@
             </div>
         </div>
     </div>
+    <!-- Modal ĐN -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Đăng Nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Tên đăng nhập</label>
+                            <input type="text" class="form-control" id="username" placeholder="Nhập tên đăng nhập"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu"
+                                required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary" form="loginForm">Đăng Nhập</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-body-tertiary text-muted ">
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
@@ -166,8 +196,7 @@
                         </h6>
                         <p>
                             Chúng tôi cam kết, đảm bảo đưa sản phẩm trực tiếp từ nhà sản xuất đến tay người dùng và kiểm
-                            soát được chất lượng để đáp ứng được nhu cầu ngày càng cao của khách hàng. Tất cả các sản
-                            phẩm tại SHOES đều có nguồn gốc xuất xứ rõ ràng, chất lượng.
+                            soát được chất lượng để đáp ứng được nhu cầu ngày càng cao của khách hàng
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -187,9 +216,7 @@
                         <p>
                             <a href="#!" class="text-reset">Vue</a>
                         </p>
-                        <p>
-                            <a href="#!" class="text-reset">Laravel</a>
-                        </p>
+
                     </div>
                     <!-- Grid column -->
 
@@ -205,9 +232,7 @@
                         <p>
                             <a href="#!" class="text-reset">Settings</a>
                         </p>
-                        <p>
-                            <a href="#!" class="text-reset">Orders</a>
-                        </p>
+
                         <p>
                             <a href="#!" class="text-reset">Help</a>
                         </p>
@@ -218,13 +243,12 @@
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-home me-3"></i> Q4, TP.HCM</p>
                         <p>
                             <i class="fas fa-envelope me-3"></i>
                             info@example.com
                         </p>
                         <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -239,6 +263,8 @@
         </div>
 
     </footer>
+
+
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
