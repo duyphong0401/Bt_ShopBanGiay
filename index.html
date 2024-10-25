@@ -20,72 +20,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fancy box css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
     <!-- css -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body> 
-        <header class="header_shoes">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                
-                <div class="container">
-                    <!-- logo -->
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/shop_logo_image.png" alt="" style="width: 100px; height: auto;">
-                    </a>
-                    <!-- button ở mobile -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- Menu -->
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active text-primary" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./views/detail.html">Shop</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                        <form class="tool-search" action="/search">
-                            <input type="hidden" name="type" value="product">
-                            <input required="" name="q" autocomplete="off" type="text"
-                                placeholder="Bạn cần tìm gì ...?">
-                            <button type="submit" title="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            <button id="cart_button" type="button" class="btn btn-primary position-relative ">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                <span class="soluong_alert position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                 
-                                  <span class="visually-hidden">unread messages</span>
-                                </span>
-                              </button>
-                              <button class="btn btn-primary">
-                                <a style="text-decoration: none;" class="text-white" href="./views/register.html">Đăng ký</a>
-                              </button>
-                            
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
-                                    Đăng Nhập
-                                </button>
-                        </form>
-                    </div>
+<body>
+    <header class="header_shoes">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./img/shop_logo_image.png" alt="" style="width: 100px; height: auto;">
+                </a>
+                <!-- button ở mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Menu -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-primary" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./views/detail.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="tool-search" action="/search">
+                        <input type="hidden" name="type" value="product">
+                        <input required="" name="q" autocomplete="off" type="text" placeholder="Bạn cần tìm gì ...?">
+                        <button type="submit" title="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button id="cart_button" type="button" class="btn btn-primary position-relative ">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span
+                                class="soluong_alert position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                                <span class="visually-hidden">unread messages</span>
+                            </span>
+                        </button>
+                        <button class="btn btn-primary">
+                            <a style="text-decoration: none;" class="text-white" href="./views/register.html">Đăng
+                                ký</a>
+                        </button>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">
+                            Đăng Nhập
+                        </button>
+                    </form>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
     <section class="carousel_shoes">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-          
+
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
                     <img src="http://file.hstatic.net/1000230642/collection/web_banner___phien_ban_40_nam_c79b4b7e172046b28d7d46e29594826b.png"
@@ -120,7 +124,7 @@
             <div id="product-container" class="product_content row ">
 
             </div>
-            
+
 
         </div>
     </section>
@@ -137,7 +141,7 @@
                         <!-- Sản phẩm trong giỏ sẽ hiển thị ở đây -->
                     </div>
 
-                      
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -146,34 +150,62 @@
         </div>
     </div>
 
+    <!-- number -->
+  <section class="number">
+    <div class="container">
+      <div class="number_content">
+        <!-- item -->
+         <div class="number_item">
+          <h3 class="counter">8,705</h3>
+          <p>PROJECTS COMPLETED</p>
+         </div>
+         <div class="number_item">
+          <h3 class="counter">480</h3>
+          <p>ACTIVE CLIENTS</p>
+         </div>
+         <div class="number_item">
+          <h3 class="counter">625</h3>
+          <p>SHOES SOLD</p>
+         </div>
+         <div class="number_item">
+          <h3 class="counter">9,774</h3>
+          <p>HAPPY CLIENTS</p>
+         </div>
+         
+      </div>
+    </div>
+  </section>
+
     <!-- Modal ĐN -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="loginModalLabel">Đăng Nhập</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="loginForm">
-                    <div class="mb-3">
-                        <label for="username" class="form-label">Tên đăng nhập</label>
-                        <input type="text" class="form-control" id="username" placeholder="Nhập tên đăng nhập" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Mật khẩu</label>
-                        <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu" required>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                <button type="submit" class="btn btn-primary" form="loginForm">Đăng Nhập</button>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Đăng Nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Tên đăng nhập</label>
+                            <input type="text" class="form-control" id="username" placeholder="Nhập tên đăng nhập"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu"
+                                required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                    <button type="submit" class="btn btn-primary" form="loginForm">Đăng Nhập</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-      
+
 
 
 
@@ -245,7 +277,7 @@
                         <p>
                             <a href="#!" class="text-reset">Vue</a>
                         </p>
-                      
+
                     </div>
                     <!-- Grid column -->
 
@@ -261,7 +293,7 @@
                         <p>
                             <a href="#!" class="text-reset">Settings</a>
                         </p>
-                        
+
                         <p>
                             <a href="#!" class="text-reset">Help</a>
                         </p>
@@ -292,17 +324,45 @@
         </div>
 
     </footer>
-
+    <a href="#" class="cd-top text-replace js-cd-top backToTop">
+        <i class="fa fa-chevron-down"></i></a>
 
     <script>
-         window.addEventListener('scroll', function () {
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('.header_shoes');
-            if (window.scrollY > 50) { 
+            if (window.scrollY > 50) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
         });
+    </script>
+    <!-- fancybox -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js">
+    </script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+
+    </script>
+    <!-- back to top -->
+    <script src="./js/Back to top/assets/js/util.js"></script>
+    <script src="./js/Back to top/assets/js/main.js"></script>
+    <!-- count up js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/Count up/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp({
+            time: 40000,
+        });
+
+
+
     </script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -318,8 +378,10 @@
         integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+
+
     <script type="module" src="./js/mainShoesAPI.js"></script>
-    
+
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+.backToTop{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    padding: 20px;
+    color: white;
+    background-color: #e62b4a;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .cd-top--fade-out { 
+    opacity: 0.5;
+  }

@@ -9,7 +9,7 @@ function hienThiCard(arrShoes) {
                 <div class="card ">
                     <div class="card_Shoes">
                         <div class="card_ShoesImg">
-                            <img src="${shoes.image}" class="card-img-top" alt="">
+                            <img src="${shoes.image}" class="card-img-top" alt="" data-fancybox = "gallery" data-caption="">
                         </div>
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
