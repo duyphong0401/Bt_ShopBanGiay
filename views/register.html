@@ -58,9 +58,9 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <form >
-                        
-                        <button  type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    <form>
+
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#loginModal">
                             Đăng Nhập
                         </button>
@@ -125,11 +125,11 @@
 
         </div>
     </section>
-    
+
 
     <!-- Modal ĐN -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog" id="loginModal2">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="loginModalLabel">Đăng Nhập</h5>
@@ -151,7 +151,8 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-                    <button onclick="dangNhap()" type="submit" class="btn btn-primary" form="loginForm">Đăng Nhập</button>
+                    <button onclick="dangNhap()" type="button" class="btn btn-primary">Đăng
+                        Nhập</button>
                 </div>
             </div>
         </div>
@@ -224,7 +225,7 @@
                         <p>
                             <a href="#!" class="text-reset">Vue</a>
                         </p>
-                      
+
                     </div>
                     <!-- Grid column -->
 
@@ -240,7 +241,7 @@
                         <p>
                             <a href="#!" class="text-reset">Settings</a>
                         </p>
-                        
+
                         <p>
                             <a href="#!" class="text-reset">Help</a>
                         </p>
@@ -285,7 +286,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
         integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./../js/register.js"></script>
+    <script type="module" src="./../js/register.js"></script>
 </body>
 
 </html>

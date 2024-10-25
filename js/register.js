@@ -44,12 +44,13 @@ function dangNhap() {
     };
     axios.post('https://shop.cyberlearn.vn/api/Users/signin', user)
         .then(function (response) {
-            console.log('Đăng Nhập thành công:', response.data);
-            alert('Đăng Nhập thành công!');
-
+            let loginModal = new bootstrap.Modal(document.getElementById('loginModal2'));
+            alert('Đăng Nhập thành công');
+            console.log('Đăng Nhập:', response.data);
+            window.location = "../index.html";
         })
         .catch(function (error) {
-            console.error('Đăng Nhập thất bại:', error.response.data);
+            console.error('Đăng Nhập thất bại:');
             alert('Đăng Nhập thất bại! Vui lòng kiểm tra lại thông tin.');
         });
 }
