@@ -154,7 +154,6 @@ function addToCart(id) {
       }
       sessionStorage.setItem('cart', JSON.stringify(cart));
       showCartInModal();
-      console.log('Sản phẩm đã được thêm vào giỏ hàng:', cart);
     })
     .catch(function (error) {
       console.error('Lỗi khi thêm sản phẩm vào giỏ hàng:', error);
@@ -166,7 +165,7 @@ function showCartInModal() {
   let cartItemsContainer = document.getElementById('cartItems');
   cartItemsContainer.innerHTML = '';
   document.querySelector(".soluong_alert").innerHTML = `${cart.length}`
-  
+
   if (cart.length > 0) {
     let tableContent = `
       <div class="table-responsive">
@@ -187,7 +186,7 @@ function showCartInModal() {
 
     let total = 0;
     cart.forEach(item => {
-      const itemTotal = item.price * item.quantity; 
+      const itemTotal = item.price * item.quantity;
       total += itemTotal;
       tableContent += `
         <tr>

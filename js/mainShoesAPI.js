@@ -1,7 +1,6 @@
 import { ShoessAPI } from "./ShoessAPI.js";
 import { getListAPI, getDetailAPI } from "./shoesService.js";
 
-console.log(window.location)
 function hienThiCard(arrShoes) {
   let contentCard = "";
 
