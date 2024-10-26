@@ -160,9 +160,7 @@ function addToCart(id) {
       console.error('Lỗi khi thêm sản phẩm vào giỏ hàng:', error);
     });
 }
-function tinhTongTien(cart) {
-  
-}
+
 function showCartInModal() {
   let cart = getCart();
   let cartItemsContainer = document.getElementById('cartItems');
@@ -187,7 +185,10 @@ function showCartInModal() {
           <tbody>
     `;
 
+    let total = 0;
     cart.forEach(item => {
+      const itemTotal = item.price * item.quantity; 
+      total += itemTotal;
       tableContent += `
         <tr>
           <td>${item.id}</td>
@@ -200,14 +201,20 @@ function showCartInModal() {
           </td>
           <td><strong>$${item.price.toLocaleString()}</strong></td>
           <td><strong>$${(item.price * item.quantity).toLocaleString()}</strong></td>
+           
           <td><button onclick="xoaSanPham(${item.id})" class="btn btn-outline-danger btn-sm">Xóa</button></td>
+
         </tr>
+        
       `;
     });
 
     tableContent += `
           </tbody>
         </table>
+      </div>
+      <div class="text-end me-5">
+        <h4 >Tổng tiền: <span class="text-danger"> $${total.toLocaleString()}</span></h4>
       </div>
       
     `;

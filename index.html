@@ -61,25 +61,20 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    <form class="tool-search" action="/search">
+                    <form class="tool-search" action="/search" method="GET">
                         <input type="hidden" name="type" value="product">
-                        <input required="" name="q" autocomplete="off" type="text" placeholder="Bạn cần tìm gì ...?">
+                        <input required name="q" autocomplete="off" type="text" placeholder="Bạn cần tìm gì ...?">
                         <button type="submit" title="Tìm kiếm"><i class="fa-solid fa-magnifying-glass"></i></button>
                         <button id="cart_button" type="button" class="btn btn-primary position-relative ">
                             <i class="fa-solid fa-cart-shopping"></i>
-                            <span
-                                class="soluong_alert position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-
+                            <span class="soluong_alert position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                 <span class="visually-hidden">unread messages</span>
                             </span>
                         </button>
                         <button class="btn btn-primary">
-                            <a style="text-decoration: none;" class="text-white" href="./views/register.html">Đăng
-                                ký</a>
+                            <a style="text-decoration: none;" class="text-white" href="./views/register.html">Đăng ký</a>
                         </button>
-
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#loginModal">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
                             Đăng Nhập
                         </button>
                     </form>
@@ -129,7 +124,7 @@
         </div>
     </section>
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -139,16 +134,16 @@
                 <div class="modal-body">
                     <div id="cartItems">
                         <!-- Sản phẩm trong giỏ sẽ hiển thị ở đây -->
+                        <p>Giỏ hàng trống</p> <!-- Hiển thị khi giỏ hàng rỗng -->
                     </div>
-
-
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <!-- number -->
   <section class="number">
@@ -205,6 +200,8 @@
             </div>
         </div>
     </div>
+
+   
 
 
 
