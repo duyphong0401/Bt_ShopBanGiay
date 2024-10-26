@@ -114,8 +114,10 @@ function showCartInModal() {
           </thead>
           <tbody>
       `;
-
+    let total = 0;
     cart.forEach(item => {
+      const itemTotal = item.price * item.quantity;
+      total += itemTotal;
       tableContent += `
               <tr>
           <td>${item.id}</td>
@@ -137,15 +139,19 @@ function showCartInModal() {
               </tbody>
         </table>
       </div>
+      <div class="text-end me-5">
+        <h4 >Tổng tiền: <span class="text-danger"> $${total.toLocaleString()}</span></h4>
+      </div>
       `;
-      cartItemsContainer.innerHTML = tableContent;
-    } else {
-      cartItemsContainer.innerHTML = `
+    cartItemsContainer.innerHTML = tableContent;
+  } else {
+    cartItemsContainer.innerHTML = `
         <div class="alert alert-warning text-center" role="alert">
           Giỏ hàng trống
         </div>
+        
       `;
-    }
+  }
 
 
   myModal.show();
